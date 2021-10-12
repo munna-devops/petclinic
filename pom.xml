@@ -272,6 +272,23 @@
             <artifactId>json-simple</artifactId>
         </dependency>
     </dependencies>
+    
+    <distributionManagement>
+       <repository>
+          <uniqueVersion>false</uniqueVersion>
+          <id>nexus</id>
+          <name>My Nexus release Repository</name>
+          <url>http://192.168.239.129:8081/repository/maven-releases/</url>
+          <layout>default</layout>
+       </repository>
+       <snapshotRepository>
+          <uniqueVersion>true</uniqueVersion>
+          <id>nexus</id>
+          <name>My Nexus Snapshot Repository</name>
+          <url>http://192.168.239.129:8081/repository/maven-snapshots/</url>
+          <layout>legacy</layout>
+       </snapshotRepository> 
+    </distributionManagement>
 
     <!-- Maven plugin versions are mentioned in order to guarantee the build reproducibility in the long term -->
     <build>
