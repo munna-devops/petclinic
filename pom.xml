@@ -286,7 +286,6 @@
           <id>nexus</id>
           <name>My Nexus Snapshot Repository</name>
           <url>http://192.168.239.129:8081/repository/maven-snapshots/</url>
-          <layout>legacy</layout>
        </snapshotRepository> 
     </distributionManagement>
 
