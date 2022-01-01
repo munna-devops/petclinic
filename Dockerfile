@@ -1,2 +1,3 @@
-FROM tomcat:8.0.20-jre8
-COPY target/petclinic*.war /usr/local/tomcat/webapps/petclinic.war
+FROM tomcat
+COPY /target/petclinic.war /usr/local/tomcat/webapps/petclinic.war
+CMD ["catalina.sh", "run"]
